@@ -1,0 +1,77 @@
+﻿@model PagedList.IPagedList<CloudPhotoApp.Storage.Entities.Photo>
+
+@{
+    ViewBag.Title = "Cloud Storage App";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (ViewData["Success"] != null)
+{
+    <div class="alert alert-success">@ViewData["Success"].ToString()</div>
+}
+
+<div style="margin-top: 20px;" class="container-fluid">
+    <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-2">
+            <ul class="list-inline">
+                @foreach (var img in Model)
+                {
+                    <li class="col-sm-3">
+                        <div id="image1" style="margin: 10px;">
+                            @if (User.IsInRole("Admins"))
+                            {
+                                using (Html.BeginForm("Delete", "Home"))
+                                {
+                                    <input type="hidden" value="@img.RowKey" name="rowKey" />
+                                    <button type="submit" class="btn btn-default btn-sm">
+                                        <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                }
+                            }
+                            <a href="@img.RawUri" target="_blank"><img src="@img.ThumbUri" alt="@img.FileName" class="img-responsive"></a>
+
+                            <div class="text-center caption">
+                                <h4 class="brandText">@img.Title</h4>
+                                <span class="label label-primary">Uploader: @img.UploadedBy</span>
+                                <p>@img.DateAdded</p>
+                            </div>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- PAGING -->
+<div class="text-center">
+    <h3>
+        <span class="label label-default">
+            @if (Model.HasPreviousPage)
+            {
+                <a style="text-decoration: none;" href="@Url.Action("Index", "Home", new { page = 1, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter })">
+                    <span class="glyphicon glyphicon-backward"></span>
+                </a>
+                @Html.Raw(" ");
+                <a style="text-decoration: none;" href="@Url.Action("Index", "Home", new { page = Model.PageNumber - 1, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter })">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+            }
+
+            @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+
+            @if (Model.HasNextPage)
+            {
+                <a style="text-decoration: none;" href="@Url.Action("Index", "Home", new { page = Model.PageNumber + 1, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter })">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                @Html.Raw(" ");
+                <a style="text-decoration: none;" href="@Url.Action("Index", "Home", new { page = Model.PageCount, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter })">
+                    <span class="glyphicon glyphicon-forward"></span>
+                </a>
+            }
+        </span>
+    </h3>
+</div>
+

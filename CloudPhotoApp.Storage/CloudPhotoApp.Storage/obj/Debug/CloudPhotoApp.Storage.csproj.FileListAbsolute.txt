@@ -1,0 +1,33 @@
+C:\Users\Jonathan\Develop\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\CloudPhotoApp.Storage.dll
+C:\Users\Jonathan\Develop\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\CloudPhotoApp.Storage.pdb
+C:\Users\Jonathan\Develop\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Jonathan\Develop\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\Microsoft.Data.OData.dll
+C:\Users\Jonathan\Develop\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\Microsoft.Data.Edm.dll
+C:\Users\Jonathan\Develop\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\System.Spatial.dll
+C:\Users\Jonathan\Develop\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Jonathan\Develop\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\obj\Debug\CloudPhotoApp.Storage.dll
+C:\Users\Jonathan\Develop\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\obj\Debug\CloudPhotoApp.Storage.pdb
+C:\Users\Jonathan\Develop\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Jonathan\Develop\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\obj\Debug\CloudPhotoApp.Storage.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\SkyDrive\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\CloudPhotoApp.Storage.dll
+C:\Users\Jonathan\SkyDrive\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\CloudPhotoApp.Storage.pdb
+C:\Users\Jonathan\SkyDrive\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Jonathan\SkyDrive\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Jonathan\SkyDrive\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\Microsoft.Data.OData.dll
+C:\Users\Jonathan\SkyDrive\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\Microsoft.Data.Edm.dll
+C:\Users\Jonathan\SkyDrive\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\System.Spatial.dll
+C:\Users\Jonathan\SkyDrive\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Jonathan\SkyDrive\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\obj\Debug\CloudPhotoApp.Storage.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\SkyDrive\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\obj\Debug\CloudPhotoApp.Storage.dll
+C:\Users\Jonathan\SkyDrive\Kurser\Cloud Computing\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\obj\Debug\CloudPhotoApp.Storage.pdb
+C:\Users\Jonathan\Desktop\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\CloudPhotoApp.Storage.dll
+C:\Users\Jonathan\Desktop\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\CloudPhotoApp.Storage.pdb
+C:\Users\Jonathan\Desktop\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Jonathan\Desktop\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Jonathan\Desktop\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\Microsoft.Data.OData.dll
+C:\Users\Jonathan\Desktop\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\Microsoft.Data.Edm.dll
+C:\Users\Jonathan\Desktop\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\System.Spatial.dll
+C:\Users\Jonathan\Desktop\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Jonathan\Desktop\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\obj\Debug\CloudPhotoApp.Storage.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Desktop\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\obj\Debug\CloudPhotoApp.Storage.dll
+C:\Users\Jonathan\Desktop\CloudPhotoApp\CloudPhotoApp.Storage\CloudPhotoApp.Storage\obj\Debug\CloudPhotoApp.Storage.pdb

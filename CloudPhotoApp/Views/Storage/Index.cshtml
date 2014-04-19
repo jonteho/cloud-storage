@@ -1,0 +1,29 @@
+﻿@model List<CloudPhotoApp.Storage.Entities.StorageDetails>
+
+@{
+    ViewBag.Title = "Cloud Storage App";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table style="margin-top: 20px;" class="table table-responsive table-bordered">
+    <div class="alert alert-success text-center">Storagesize: @ViewData["TotalSize"].ToString()</div>
+    <tr>
+        <th>Storage Type</th>
+        <th>Name</th>
+        <th>Size</th>
+        <th>Total Entrys</th>
+    </tr>
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.StorageType</td>
+                <td>@item.Name</td>
+                <td>@item.Size</td>
+                <td>@item.TotalEntrys</td>
+            </tr>
+        }
+    }
+
+</table>

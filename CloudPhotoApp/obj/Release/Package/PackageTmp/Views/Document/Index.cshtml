@@ -1,0 +1,84 @@
+﻿@model PagedList.IPagedList<CloudPhotoApp.Storage.Entities.Document>
+
+@{
+    ViewBag.Title = "Cloud Storage App";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (ViewData["Success"] != null)
+{
+    <div class="alert alert-success">@ViewData["Success"].ToString()</div>
+}
+
+
+<table style="margin-top: 20px;" class="table table-responsive table-bordered">
+    <tr>
+        <th>Title</th>
+        <th>Added</th>
+        <th>Uploader</th>
+        <th>Filename</th>
+        <th>Size</th>
+        <th></th>
+    </tr>
+    @if (Model != null)
+    {
+
+        foreach (var file in Model)
+        {
+            <tr>
+                <td>@file.Title</td>
+                <td>@file.DateAdded</td>
+                <td>@file.UploadedBy</td>
+                <td>@file.FileName</td>
+                <td>@file.ContentLength</td>
+                <td>
+                    <a class="pull-left" style="text-decoration: none; margin-right: 10px;" href="@file.RawUri">
+                        <span class="glyphicon glyphicon-cloud-download"></span>
+                    </a>
+                    @if (User.IsInRole("Admins"))
+                    {
+                        using (Html.BeginForm("Delete", "Document"))
+                        {
+                            <input type="hidden" value="@file.RowKey" name="rowKey" />
+                            <button type="submit" class="pull-left btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </button>
+                        }
+                    }
+                </td>
+            </tr>
+        }
+
+    }
+
+</table>
+
+<!-- PAGING -->
+<div class="text-center">
+    <h3>
+        <span class="label label-default">
+            @if (Model.HasPreviousPage)
+            {
+                <a style="text-decoration: none;" href="@Url.Action("Index", "Document", new { page = 1, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter })">
+                    <span class="glyphicon glyphicon-backward"></span>
+                </a>
+                @Html.Raw(" ");
+                <a style="text-decoration: none;" href="@Url.Action("Index", "Document", new { page = Model.PageNumber - 1, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter })">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+            }
+
+            @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+
+            @if (Model.HasNextPage)
+            {
+                <a style="text-decoration: none;" href="@Url.Action("Index", "Document", new { page = Model.PageNumber + 1, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter })">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                @Html.Raw(" ");
+                <a style="text-decoration: none;" href="@Url.Action("Index", "Document", new { page = Model.PageCount, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter })">
+                    <span class="glyphicon glyphicon-forward"></span>
+                </a>
+            }
+        </span>
+    </h3>
+</div>
